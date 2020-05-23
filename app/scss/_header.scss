@@ -1,0 +1,113 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: $gutter * 2;
+    background: url(../img/bg_header.jpg) no-repeat center / cover;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $title-font;
+    }
+
+    &__button {
+        margin-top: $gutter;
+    }
+
+    &__scrollDown {
+        position: relative;
+        top: -$gutter;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        animation-name: scrollDown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.header-menu {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
+
+.lang-swicher {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: $gutter * 1.5;
+    border-right: 1px solid #fff;
+    font-weight: bold;
+    float: right;
+
+    &__current {
+        position: relative;
+        padding-right: $gutter * 1.5;
+        cursor: pointer;
+        &:before {
+            content: '';
+            background: url(../img/arrow_down.svg) no-repeat center / contain;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: $color-secondary;
+        border-radius: 3px;
+        padding: $gutter / 2;
+        min-width: 55px;
+        &_active {
+            display: block;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+    }
+
+}
+
+@keyframes scrollDown {
+    0% {
+        top: -$gutter;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        top: -$gutter;
+    }
+}

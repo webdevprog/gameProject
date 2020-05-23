@@ -1,0 +1,67 @@
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 17px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+
+	margin: auto;
+	input, textarea {
+		border: #000 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.container-fluid {
+	max-width: 1300px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.title {
+	&_big {
+		line-height: 1;
+		font-size: 80px;
+	}
+
+	&__sub {
+		line-height: 1;
+		font-size: 24px;
+	}
+}
+
+.content {
+	height: 100vh;
+}
