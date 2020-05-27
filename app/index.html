@@ -27,7 +27,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="main">
 		<div class="container-fluid">
 			<div class="row align-items-center">
 				<div class="col-lg-2">
@@ -36,9 +36,9 @@
 				<div class="col-lg-7">
 					<nav class="header-menu">
 						<ul class="header-menu__list">
-							<li class="header-menu__item"><a href="">MAIN</a></li>
-							<li class="header-menu__item"><a href="">about</a></li>
-							<li class="header-menu__item"><a href="">game features</a></li>
+							<li class="header-menu__item"><a href="#main">MAIN</a></li>
+							<li class="header-menu__item"><a href="#about">about</a></li>
+							<li class="header-menu__item"><a href="#features">game features</a></li>
 							<li class="header-menu__item"><a href="">System requirements</a></li>
 							<li class="header-menu__item"><a href="">quotes</a></li>
 						</ul>
@@ -74,7 +74,7 @@
 	</header>
 
 	<main class="content">
-		<section class="section section-about">
+		<section class="section section-about" id="about">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-5">
@@ -96,7 +96,7 @@
 					<div class="col-lg-7">
 						<div class="section-about__slider custom-slider">
 							<div class="custom-slider-wrapper">
-								<div class="custom-slider__slide active">
+								<div class="custom-slider__slide">
 									<img src="img/slide_about.jpg" alt="">
 								</div>
 								<div class="custom-slider__slide">
@@ -117,6 +117,42 @@
 
 						</div>
 						<!-- Slider main container -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-features" id="features">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-5 offset-lg-7">
+						<div class="section-features__subTitle">What’s so special?</div>
+						<h2 class="section-features__title">features</h2>
+						<div class="section-features-accordion accordion">
+							<div class="accordion__item">
+								<div class="accordion__title">SURVIVE AT ALL COSTS</div>
+								<div class="accordion__content">
+									You have 30 minutes to find a relic, signal for extraction, and grab
+									one of three spots on the rescue chopper.
+									You have 30 minutes to find a relic, signal for extraction, and grab
+									one of three spots on the rescue chopper.
+								</div>
+							</div>
+							<div class="accordion__item">
+								<div class="accordion__title">CREATE ALLIES AND ENEMIES</div>
+								<div class="accordion__content">
+									You have 30 minutes to find a relic, signal for extraction, and grab
+									one of three spots on the rescue chopper.
+								</div>
+							</div>
+							<div class="accordion__item">
+								<div class="accordion__title">IMPRESS THE AUDIENCE</div>
+								<div class="accordion__content">
+									You have 30 minutes to find a relic, signal for extraction, and grab
+									one of three spots on the rescue chopper.
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
