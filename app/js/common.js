@@ -160,7 +160,7 @@ $(function () {
 
 	scrollDown.init(1000);
 	langSwitcher.init();
-	sectionNav.init();
+	sectionNav.init();	
 	tabs.init();
 
 

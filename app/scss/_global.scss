@@ -4,7 +4,7 @@
 
 ::selection {
 	background-color: $accent;
-	color: #fff;
+	color: $color-white;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 
 	margin: auto;
 	input, textarea {
-		border: #000 1px solid;
+		border: $color-black 1px solid;
 		outline: none;
 		&:focus:required:invalid {
 			border-color: red;
@@ -62,6 +62,10 @@ b, strong {
 
 	&_medium {
 		font-size: 36px;
+	}
+
+	&_small {
+		font-size: 24px;
 	}
 
 	&__sub {
@@ -135,7 +139,7 @@ b, strong {
 			border: 1px solid white;
 			margin: 0 15px 0 15px;
 			&.active {
-				background-color: #fff;
+				background-color: $color-white;
 				&:before {
 					content: '';
 					display: block;
@@ -144,7 +148,7 @@ b, strong {
 					width: 100%;
 					right: -100%;
 					top: 50%;
-					background-color: #fff;
+					background-color: $color-white;
 					transform: translate(0, -50%);
 				}
 			}
@@ -165,7 +169,7 @@ b, strong {
 			left: 7px;
 			width: 2px;
 			height: 0;
-			background-color: #fff;
+			background-color: $color-white;
 			transition: height .5s linear;
 		}
 
@@ -175,7 +179,7 @@ b, strong {
 			}
 			.accordion__title {
 				&:before {
-					background-color: #fff;
+					background-color: $color-white;
 				}	
 			}
 		}
@@ -193,7 +197,7 @@ b, strong {
 			left: -30px;
 			width: 16px;
 			height: 16px;
-			border: 2px solid #fff;
+			border: 2px solid $color-white;
 			border-radius: 50%;
 			top: calc(50% - 4px);
 			transform: translate(0, -50%);
