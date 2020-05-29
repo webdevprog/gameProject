@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
-    background-color: $color-black;
+    background-color: #08090b;
 
     &:before {
         content: '';
@@ -271,6 +271,34 @@
                     font-size: 14px;
                     color: $color-gray;
                 }
+            }
+        }
+    }
+
+    &-subscribe {
+        align-items: stretch;
+        .container-fluid {
+            overflow: visible;
+            background: url(../img/bg-subscribe.jpg) no-repeat 20% center / auto 670px;
+            .row {
+                height: 100%;
+            }
+        }
+
+        &__subTitle {
+            @extend .title,
+            .title__sub;
+        }
+
+        &__title {
+            @extend .title,
+            .title_big;
+        }
+
+        &__form {
+            margin-top: $gutter * 4;
+            .button {
+                width: 100%;
             }
         }
     }
