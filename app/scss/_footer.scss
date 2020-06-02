@@ -1,0 +1,28 @@
+.footer {
+    background-color: $color-dark;
+    &__logo {
+        max-width: 90px;
+    }
+}
+
+.footer-menu {
+    
+    &__list {
+        @extend .header-menu__list;
+    }
+
+    &__item {
+        @extend .header-menu__item;
+    }
+}
+
+.social-widget {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        color: $color-white;
+        &:hover {
+            color: red;
+        }
+    }
+}

@@ -125,7 +125,7 @@ $(function () {
 
 	let sectionNav = {
 		init() {
-			$('.header-menu a').click(function(e) {
+			$('.header-menu a, .footer-menu a').click(function(e) {
 				let link = $(this).attr('href');
 
 				if (link.match(/^#/)) {
@@ -155,6 +155,7 @@ $(function () {
 			$('.accordion .accordion__item').first().find('.accordion__title').trigger('click');
 		}
 	}
+
 
 	let sliderAbout = new customSlider($('.custom-slider'), 3);
 
