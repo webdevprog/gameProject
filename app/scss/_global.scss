@@ -15,8 +15,10 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
-
 	margin: auto;
+	&.overflow-hidden {
+		overflow-y: hidden;
+	}
 	input, textarea {
 		border: $color-black 1px solid;
 		outline: none;
@@ -58,19 +60,31 @@ b, strong {
 		line-height: 1;
 		font-size: 80px;
 		margin-bottom: $gutter * 3;
+		@include media-breakpoint-down(md) {
+			font-size: 50px;	
+		}
 	}
 
 	&_medium {
 		font-size: 36px;
+		@include media-breakpoint-down(md) {
+			font-size: 24px;	
+		}
 	}
 
 	&_small {
 		font-size: 24px;
+		@include media-breakpoint-down(md) {
+			font-size: 20px;	
+		}
 	}
 
 	&__sub {
 		line-height: 1;
 		font-size: 24px;
+		@include media-breakpoint-down(md) {
+			font-size: 20px;	
+		}
 	}
 }
 

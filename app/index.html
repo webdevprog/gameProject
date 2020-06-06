@@ -30,11 +30,11 @@
 	<header class="header" id="main">
 		<div class="container-fluid">
 			<div class="row align-items-center">
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-8">
 					<img src="img/logo.svg" alt="" class="header__logo">
 				</div>
-				<div class="col-lg-7">
-					<nav class="header-menu">
+				<div class="col-lg-7 header__col_menu">
+					<nav class="header-menu" id="header-menu">
 						<ul class="header-menu__list">
 							<li class="header-menu__item"><a href="#main">MAIN</a></li>
 							<li class="header-menu__item"><a href="#about">about</a></li>
@@ -44,7 +44,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-2">
 					<div class="lang-swicher">
 						<span class="lang-swicher__current">ENG</span>
 						<ul class="lang-swicher__list">
@@ -54,7 +54,14 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-1">
+				<div class="col-2 d-block d-lg-none">
+					<button class="hamburger hamburger--collapse" id="mobile-menu" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+				<div class="col-md-1 d-none d-lg-block">
 					<div class="header-icons">
 						<a href="#" class="header-icons__item"><img src="img/steam_icon.svg" alt=""></a>
 						<a href="#" class="header-icons__item"><img src="img/xbox_icon.svg" alt=""></a>
@@ -291,12 +298,15 @@
 						<div class="section-subscribe__subTitle">Want to stay in touch?</div>
 						<h2 class="section-subscribe__title">newsletter SUBSCRIBE </h2>
 						<div class="section-subscribe__text">
-							In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+							In order to start receiving our news, all you have to do is enter your email address.
+							Everything else will be taken care of by us. We will send you emails containing information
+							about game. We don’t spam.
 						</div>
 						<form action="" class="section-subscribe__form form" autocomplete="off">
 							<div class="form__row">
 								<div class="form__col col-sm-8">
-									<input type="email" id="email" value="" onchange="this.setAttribute('value', this.value);">
+									<input type="email" id="email" value=""
+										onchange="this.setAttribute('value', this.value);">
 									<label for="email">Your email address</label>
 								</div>
 								<div class="form__col col-sm-4">
@@ -309,7 +319,7 @@
 			</div>
 		</section>
 	</main>
-	
+
 	<footer class="footer">
 		<div class="container-fluid">
 			<div class="row align-items-center">

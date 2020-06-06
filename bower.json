@@ -1,0 +1,12 @@
+{
+  "name": "basetemplate",
+  "description": "template for front-end",
+  "main": "index.js",
+  "authors": [
+    "Unknow"
+  ],
+  "dependencies": {
+    "css-hamburgers": "^1.1.3",
+    "fontawesome": "^5.13.0"
+  }
+}
