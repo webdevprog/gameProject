@@ -3,6 +3,16 @@
     &__logo {
         max-width: 90px;
     }
+
+    &__subrow {
+        margin-top: $gutter * 2;
+        padding: $gutter * 2 0;
+        border-top: 1px solid rgba($color-white, .5);
+    }
+
+    &__copyright {
+        color: rgba($color-white, .5);
+    }
 }
 
 .footer-menu {
@@ -14,13 +24,27 @@
     &__item {
         @extend .header-menu__item;
     }
+
+    &_sub {
+       .footer-menu__list {
+           justify-content: flex-end;
+           .footer-menu__item {
+               padding: 0 $gutter;
+               line-height: 1;
+               &:not(:last-child) {
+                   border-right: 2px solid $color-white;
+               }
+           }
+       } 
+    }
 }
 
 .social-widget {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     &__item {
         color: $color-white;
+        margin: 0 $gutter * 2;
         &:hover {
             color: red;
         }
