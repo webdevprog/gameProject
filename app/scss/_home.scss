@@ -9,7 +9,7 @@
     background-color: #08090b;
 
     @include media-breakpoint-down(md) {
-        padding: $gutter * 5 0;
+        padding: ($gutter * 5) 0;
         min-height: 100%;
     }
 
@@ -42,7 +42,13 @@
         &__subTitle {
             @extend .title,
             .title__sub;
-            margin-top: $gutter * 5;
+            margin-top: ($gutter * 5);
+        }
+
+        &__slider {
+            @include media-breakpoint-down(sm) {
+                padding-right: 20%;
+            }
         }
 
         &__title {
@@ -192,20 +198,32 @@
             .title_big;
         }
 
+        &__btn {
+            margin-bottom: ($gutter * 2);
+        }
+
         &__text {
             font-size: 18px;
-            margin-bottom: $gutter * 4;
+            margin-bottom: ($gutter * 4);
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: ($gutter * 2);
+            }
         }
 
         .quotes-wrapper {
             .quote-item {
-                background: rgba(255, 255, 255, 0.08);
+                background: rgba($color-white, 0.08);
                 border-radius: 10px;
                 padding: $gutter;
                 margin-right: 20%;
-                margin-bottom: $gutter * 2;
-                border: 1px solid rgba(255, 255, 255, 0.08);
+                margin-bottom: ($gutter * 2);
+                border: 1px solid rgba($color-white, 0.08);
                 transition: border .5s linear;
+
+                @include media-breakpoint-down(md) {
+                    margin: 0 0 ($gutter * 2) 0;
+                }
 
                 &:hover {
                     border: 1px solid $color-primary;
@@ -214,6 +232,10 @@
                 &:nth-child(2n+1) {
                     margin-left: 20%;
                     margin-right: 0;
+
+                    @include media-breakpoint-down(md) {
+                        margin: 0 0 ($gutter * 2) 0;
+                    }
                 }
 
                 &__header {
@@ -253,7 +275,8 @@
                 &__name {
                     line-height: 1;
                     color: $color-primary;
-                    @extend .title, .title_small;
+                    @extend .title,
+                    .title_small;
                 }
 
                 &__nick {
@@ -265,6 +288,7 @@
                     position: absolute;
                     right: 0;
                     top: 0;
+
                     .fa-twitter {
                         color: $color-gray;
                     }
@@ -283,10 +307,19 @@
     }
 
     &-subscribe {
+        padding: 0;
         align-items: stretch;
+
         .container-fluid {
             overflow: visible;
             background: url(../img/bg-subscribe.jpg) no-repeat 20% center / auto 670px;
+            padding: ($gutter * 5) 15px;
+
+            @include media-breakpoint-down(md) {
+                background-size: contain;
+                background-position: -150px 0;
+            }
+
             .row {
                 height: 100%;
             }
@@ -304,8 +337,13 @@
 
         &__form {
             margin-top: $gutter * 4;
+
             .button {
                 width: 100%;
+
+                @include media-breakpoint-down(md) {
+                    margin-top: $gutter;
+                }
             }
         }
     }
