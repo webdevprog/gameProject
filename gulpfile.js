@@ -145,18 +145,18 @@ gulp.task('build', () => {
 
 	var buildCss = gulp.src([
 		'app/css/main.min.css',
-		], {base: "./"}).pipe(gulp.dest('./css'));
+		]).pipe(gulp.dest('./css'));
 
 	var buildCss = gulp.src([
 		'app/img**/*',
-	], {base: "./"}).pipe(gulp.dest('./img'));
+	]).pipe(gulp.dest('./img'));
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
-		], {base: "./"}).pipe(gulp.dest('./js'));
+		]).pipe(gulp.dest('./js'));
 
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',
-		], {base: "./"}).pipe(gulp.dest('./fonts'));
+		]).pipe(gulp.dest('./fonts'));
 	
 })
