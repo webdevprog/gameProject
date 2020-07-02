@@ -133,30 +133,27 @@ if (gulpVersion == 4) {
 
 
 gulp.task('build', () => {
-	del.sync('/js');
-	del.sync('./css');
-	del.sync('./fonts');
-	del.sync('./img');
-	del.sync('./*.html');
+	
+	del.sync('dist');
 	
 	var buildFiles = gulp.src([
 		'app/*.html',
-		]).pipe(gulp.dest('./'));
+		]).pipe(gulp.dest('dist'));
 
 	var buildCss = gulp.src([
 		'app/css/main.min.css',
-		]).pipe(gulp.dest('./css'));
+		]).pipe(gulp.dest('dist/css'));
 
 	var buildCss = gulp.src([
-		'app/img/**/*',
-	]).pipe(gulp.dest('./img'));
+		'app/img**/*',
+	]).pipe(gulp.dest('dist/img'));
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
-		]).pipe(gulp.dest('./js'));
+		]).pipe(gulp.dest('dist/js'));
 
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',
-		]).pipe(gulp.dest('./fonts'));
-	 
+		]).pipe(gulp.dest('dist/fonts'));
+	
 })
