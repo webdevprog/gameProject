@@ -145,7 +145,7 @@ gulp.task('build', () => {
 		]).pipe(gulp.dest('dist/css'));
 
 	var buildImage = gulp.src([
-		'app/img/*',
+		'app/img/**/*',
 	]).pipe(gulp.dest('dist/img'));
 
 	var buildJs = gulp.src([
