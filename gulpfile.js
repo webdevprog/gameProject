@@ -144,8 +144,8 @@ gulp.task('build', () => {
 		'app/css/main.min.css',
 		]).pipe(gulp.dest('dist/css'));
 
-	var buildCss = gulp.src([
-		'app/img**/*',
+	var buildImage = gulp.src([
+		'app/img/*',
 	]).pipe(gulp.dest('dist/img'));
 
 	var buildJs = gulp.src([

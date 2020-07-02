@@ -7,6 +7,10 @@
   ],
   "dependencies": {
     "css-hamburgers": "^1.1.3",
-    "fontawesome": "^5.13.0"
+    "fontawesome": "^5.13.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "bootstrap4": "bootstrap#^4.5.0"
   }
 }
