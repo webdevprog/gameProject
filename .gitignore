@@ -1,3 +1,8 @@
+/css/
+/js/
+/fonts/
+/img/
+index.html
 /node_modules/
 /dist/
 /.git/
@@ -7,3 +12,4 @@
 /**/package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store
+
