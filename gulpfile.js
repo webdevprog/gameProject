@@ -158,5 +158,5 @@ gulp.task('build', () => {
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',
 		]).pipe(gulp.dest('./fonts'));
-	
+	 
 })
