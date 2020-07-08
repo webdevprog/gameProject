@@ -2,7 +2,7 @@
 
 A cool game landing page template with stunning graphics and good typography.
 
-Here you can find the original Figma(https://freebiesupply.com/free-figma/game-landing-page/)
+Here you can find the original [Figma](https://freebiesupply.com/free-figma/game-landing-page/)
 
 This project was developed with HTML5, Sass, jQuery, Bootstrap 4, and Gulp.
 
