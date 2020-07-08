@@ -1,4 +1,4 @@
-# Game Landing Page(https://webdevprog.github.io/gameProject/)
+# [Game Landing Page](https://webdevprog.github.io/gameProject/)
 
 A cool game landing page template with stunning graphics and good typography.
 
